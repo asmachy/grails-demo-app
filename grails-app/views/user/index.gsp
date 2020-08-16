@@ -12,13 +12,10 @@
     <title>User Profile</title>
 </head>
 <body>
-    <div class="nav" role="navigation">
-        <ul>
-            <li><a class="home" href="${createLink(uri: '/')}">User Prfoile</a></li>
-            <li><g:link class="create" action="edit">Change Password</g:link></li>
-        </ul>
-    </div>
+
     <div id="content" role="main">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div class="card-body">
         <h5 class="card-title text-center">User Profile</h5>
 
         <section class="row colset-6-its">
@@ -32,6 +29,7 @@
 
             </sec:ifLoggedIn>
         </section>
+        </div>
     </div>
 </body>
 </html>

@@ -26,4 +26,4 @@ grails.plugin.springsecurity.filterChain.chainMap = [
 	[pattern: '/**',             filters: 'JOINED_FILTERS']
 ]
 
-grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/profile'
+grails.plugin.springsecurity.successHandler.defaultTargetUrl = '/User'

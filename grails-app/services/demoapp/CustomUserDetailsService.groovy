@@ -46,10 +46,5 @@ class CustomUserDetailsService implements GrailsUserDetailsService {
             !user.accountLocked, authorities ?: NO_ROLES, user.id,
               user.firstname, user.lastname, user.address, user.phone, user.email, user.fullname, user.birthdate)
    }
-   boolean isValidUser() {
-      String s = "asg"
-      println(s)
-   }
-
 
 }

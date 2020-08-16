@@ -365,7 +365,9 @@ fieldset.embedded legend {
     border-color: #ffaaaa;
     color: #cc0000;
 }
-
+.flex-container {
+    display: flex;
+}
 .error input:focus, .error select:focus, .error textarea:focus {
     -moz-box-shadow: 0 0 0.5em #ffaaaa;
     -webkit-box-shadow: 0 0 0.5em #ffaaaa;

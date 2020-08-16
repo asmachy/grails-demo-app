@@ -3,7 +3,7 @@ package demoapp
 import grails.testing.web.controllers.ControllerUnitTest
 import spock.lang.Specification
 
-class ProfileControllerSpec extends Specification implements ControllerUnitTest<ProfileController> {
+class UserControllerSpec extends Specification implements ControllerUnitTest<UserController> {
 
     def setup() {
     }

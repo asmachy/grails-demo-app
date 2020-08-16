@@ -20,7 +20,9 @@ class User implements Serializable {
     String email
     String fullname
 
-    Date birthdate
+    Long age
+
+    GregorianCalendar birthdate
     boolean enabled = true
     boolean accountExpired
     boolean accountLocked
@@ -37,6 +39,15 @@ class User implements Serializable {
         phone nullable: false, blank: false
         firstname nullable: false, blank: false
         lastname nullable: false, blank: false
+    }
+
+    void setAge(){
+        def nowdate = new GregorianCalendar()
+        if(nowdate.get(Calendar.MONTH)>=birthdate.get(Calendar.MONTH) && nowdate.get(Calendar.DATE)>= birthdate.get(Calendar.DATE) )
+            this.age = nowdate.get(Calendar.YEAR) - birthdate.get(Calendar.YEAR)
+        else
+            this.age = nowdate.get(Calendar.YEAR) - birthdate.get(Calendar.YEAR)-1
+
     }
 
     static mapping = {

@@ -5,7 +5,7 @@ import grails.gorm.transactions.Transactional
 
 @Service(User)
 @Transactional
-interface UserprofileService {
+interface UserService {
 
     User get(Serializable id)
 }

@@ -6,7 +6,7 @@
 
 <body>
 	<div class="row">
-    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+    <div class="col-sm-9 col-md-7 col-lg-6 mx-auto">
       <div class="card card-signin my-5">
         <div class="card-body">
           <h5 class="card-title text-center">Register Here</h5>
@@ -18,7 +18,7 @@
 					  	<label for="role">Role</label>
                           <g:select class="form-control" name="role.id"
 		                        from="${demoapp.Role.list()}"
-		                        optionKey="id" />
+		                        optionKey="id" id="role.id" />
                       </div>
                 <div class="form-group">
                       <label for="firstname">First Name</label>
@@ -46,8 +46,11 @@
                 </div>
 
                 <div class="form-group">
-                      <label for="birthdate">Birthdate</label>
-                      <input type="text" placeholder="Your birthdate in dd/MM/yyy format" class="form-control" name="birthdate" id="birthdate" autocapitalize="none"/>
+                      <h2>Birthdate</h2>
+                    <label for="daybirthdate">Day</label><input type="number" placeholder="Day" class="form-control" name="daybirthdate" id="daybirthdate" autocapitalize="none"/>
+                    <label for="monthbirthdate">Month</label>  <input type="number" placeholder="Month" class="form-control" name="monthbirthdate" id="monthbirthdate" autocapitalize="none"/>
+                    <label for="yearbirthdate">Year</label> <input type="number" placeholder="Year" class="form-control" name="yearbirthdate" id="yearbirthdate" autocapitalize="none"/>
+
                 </div>
 
                 <div class="form-group">
@@ -71,7 +74,7 @@
   </div>
 	<script type="text/javascript">
 		document.addEventListener("DOMContentLoaded", function(event) {
-			document.forms['loginForm'].elements['username'].focus();
+			document.forms['loginForm'].elements['role.id'].focus();
 		});
 	</script>
 </body>

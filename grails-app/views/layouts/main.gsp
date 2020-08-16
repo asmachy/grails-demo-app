@@ -43,6 +43,15 @@
 </nav>
 
 <div class="container">
+    <sec:ifLoggedIn>
+        <div class="nav" role="navigation">
+            <ul>
+                <li><a class="home" href="${createLink(uri: '/')}">User Prfoile</a></li>
+                <li><g:link class="create" controller="user" action="edit">Change Password</g:link></li>
+                <li><g:link class="list" controller="user" action="list">User List</g:link></li>
+            </ul>
+        </div>
+</sec:ifLoggedIn>
     <g:layoutBody/>
 </div>
 

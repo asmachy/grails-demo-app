@@ -12,12 +12,7 @@
         <title>Change Password</title>
     </head>
     <body>
-        <div class="nav" role="navigation">
-            <ul>
-                <li><a class="home" href="${createLink(uri: '/')}">User Prfoile</a></li>
-                <li><g:link class="create" action="edit">Change Password</g:link></li>
-            </ul>
-        </div>
+
         <div id="edit-password" class="content scaffold-edit" role="main">
             <div class="row">
 
@@ -29,7 +24,7 @@
                             <g:if test='${flash.message}'>
                                 <div class="alert alert-danger" role="alert">${flash.message}</div>
                             </g:if>
-                    <form class="form-signin" action="profile" method="PUT" id="changePasswordForm" autocomplete="off">
+                    <form class="form-signin" action="update_password" method="PUT" id="changePasswordForm" autocomplete="off">
                         <div class="form-group">
                             <label for="currentpassword">Current Password</label>
                             <input type="password" placeholder="Enter your current password" class="form-control" name="currentpassword" id="currentpassword" autocapitalize="yes"/>
