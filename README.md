@@ -24,4 +24,4 @@ Change the databse username and password in application.yml(line: 105, 106) acco
 
 Go to the project directory from command prompt and run this command
 
-<grails run-app>
+"grails run-app"
